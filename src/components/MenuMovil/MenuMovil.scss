@@ -1,0 +1,149 @@
+@import '/src/sass/_variables.scss';
+
+.menuMovil{
+    width: 100%;
+    height: 80px;
+    padding: 30px;
+    z-index: 1100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    background-color: $azul-oscuro;
+    box-shadow: 0px 4px 8px 6px rgba(0, 0, 0, 0.1);    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position:fixed;
+    .logo{
+        h1{
+            color: $azul-claro;
+            font-size: 32px;
+        }
+    }
+    .btn{
+        color: $azul-claro;
+        font-size: 25px;
+        padding-left: 10rem;
+    }
+}
+.enlacesMoviles{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    margin-top: 80px;
+    padding-bottom: 8rem;
+    top: 0;
+    right: -100%;
+    background-color: $azul-oscuro;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out .5s;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        li{
+            padding: 2rem;
+            outline: none;
+            a{
+                font-size: 25px;
+                font-weight: bold;
+                color: $azul-claro;
+            }
+            a:hover{
+                color: $beige;
+            }
+        }
+    }
+    .cerrarSesion{
+        display: flex;
+        flex-direction: row;
+        padding-top: 5rem;
+        i{
+            font-size: 25px;
+            color: $azul-claro;
+        }
+        i:hover{
+            color: $beige;
+        }
+        p{
+            font-size: 25px;
+            font-weight: bold;
+            padding-left: .5rem;
+            color: $azul-claro;
+        }
+    }
+    .perfilMovil{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+        }
+        .botoneraPerfil{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .perfil{
+                width: 210px;
+                height: 30px;
+                font-size: 12px;
+                font-weight: bold;
+                background: none;
+                border: none;
+                color: $azul-claro;
+                :hover{
+                    color: $beige;
+                }
+            }
+            .editar_perfil{
+                width: 135px;
+                height: 30px;
+                font-size: 10px;
+                font-weight: 100;
+                background: none;
+                border: none;
+                color: $azul-claro;
+                :hover{
+                    color: $beige;
+                }
+            }
+        }
+    }
+}
+.enlacesMoviles.activo{
+    right: 0;
+}
+
+@media screen and (min-width: 700px){
+    .menuMovil{
+        width: 100%;
+        height: 100px;
+        .btn{
+            color: $azul-claro;
+            font-size: 25px;
+            padding-left: 25rem;
+        }
+    }
+    .enlacesMoviles{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .menuMovil{
+        display: none;
+    }
+    .enlacesMoviles{
+        display: none;
+    }
+}

@@ -1,0 +1,211 @@
+@import '/src/sass/_variables.scss';
+
+header{
+    width: 100%;
+    height: 652px;
+    padding: 20px;
+    padding-top: 100px;
+    margin-bottom: 32rem;
+    background-image: url("/img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    .bienvenida{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        h2{
+            color: $blanco;
+            font-size: 24px;
+            font-weight:normal
+        }
+        h1{
+            color: $blanco;
+            font-size: 35px;
+        }
+    }
+    .formulario_vuelo{
+        width: 80%;
+        height: 820px;
+        padding: 45px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $blanco;
+        box-shadow: 0px 4px 8px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 63px;
+        h1{
+            font-size: 22px;
+            font-weight: $bold;
+            padding-bottom: 15px;
+            color: $azul-oscuro;
+        }
+        p{
+            font-size: 17px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            text-align: center;
+            color: $azul-oscuro;
+        }
+        .trayecto{
+            width: 100%;
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+                font-size: 15px;
+                text-align: center;
+                color: $azul-oscuro;
+                padding-bottom: 10px;
+            }
+            select{
+                width: 125px;
+                height: 35px;
+                padding: 5px;
+                background-color: white;
+                border-color: $azul-oscuro;
+                border-radius: 20px;
+                border-width: 2px;
+                outline: none;
+                text-align: center;
+            }
+            i{
+                font-size: 25px;
+                color: $azul-oscuro;
+                padding: 10px;
+            }
+        }
+        .fechas{
+            width: 100%;
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+                font-size: 15px;
+                color: $azul-oscuro;
+                padding-bottom: 10px;
+            }
+            input{
+                width: 125px;
+                height: 35px;
+                padding: 5px;
+                background-color: white;
+                border-color: $azul-oscuro;
+                border-radius: 20px;
+                border-width: 2px;
+                outline: none;
+            }
+            i{
+                font-size: 25px;
+                color: $azul-oscuro;
+                padding: 10px;
+            }
+        }
+        .cantidad_personas{
+            width: 100%;
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                color: $azul-oscuro;
+                padding-bottom: 10px;
+            }
+            select{
+                width: 125px;
+                height: 35px;
+                padding: 5px;
+                margin-bottom: 10px;
+                background-color: white;
+                border-color: $azul-oscuro;
+                border-radius: 20px;
+                border-width: 2px;
+                outline: none;
+            }
+        }
+        .boton_enviar{
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button{
+                width: 100px;
+                height: 35px;
+                background-color: $azul-oscuro;
+                color: $azul-claro;
+                border: none;
+                border-radius: 20px;
+            }
+            button:hover{
+                background-color: $beige
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    header{
+        width: 100%;
+        height: 652px;
+        .bienvenida{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem 0;
+            h2{
+                color: $blanco;
+                font-size: 30px;
+                padding-bottom: 1rem;
+                font-weight:normal
+            }
+            h1{
+                color: $blanco;
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    header{
+        width: 100%;
+        height: 652px;
+        padding: 20px;
+        padding-top: 100px;
+        margin-bottom: 32rem;
+        background-image: url("/img/background.jpg");
+        background-position: center;
+        background-size: cover;
+        .bienvenida{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+            h2{
+                color: $blanco;
+                font-size: 24px;
+                font-weight:normal
+            }
+            h1{
+                color: $blanco;
+                font-size: 35px;
+            }
+        }
+    }
+}
